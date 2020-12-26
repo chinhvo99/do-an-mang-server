@@ -1,0 +1,44 @@
+{
+  "plugins": ["node"],
+  "extends": ["hapi"],
+  "rules": {
+    "no-shadow": ["error", {
+      "allow": ["server", "next", "err"]
+    }],
+    "hapi/hapi-capitalize-modules": 0,
+    "hapi/hapi-scope-start": 0,
+    "func-style": 0,
+    "brace-style": ["warn", "1tbs"],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1,
+        "VariableDeclarator": 1,
+        "outerIIFEBody": 1,
+        "FunctionDeclaration": {
+          "parameters": 1,
+          "body": 1
+        },
+        "FunctionExpression": {
+          "parameters": 1,
+          "body": 1
+        },
+        "CallExpression": {
+          "arguments": 1
+        },
+        "ArrayExpression": 1,
+        "ObjectExpression": 1,
+        "ImportDeclaration": 1,
+        "flatTernaryExpressions": false,
+        "ignoreComments": false
+      }
+    ]
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    },
+  }
+}

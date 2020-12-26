@@ -1,0 +1,75 @@
+{
+  "name": "MoMan",
+  "version": "1.0.1",
+  "description": "Enouvo Nodejs Training",
+  "main": "app",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app",
+    "knex": "knex"
+  },
+  "dependencies": {
+    "@hapi/bell": "^10.1.1",
+    "@hapi/boom": "^7.4.2",
+    "@hapi/hapi": "^18.3.1",
+    "@hapi/hoek": "^8.0.1",
+    "@hapi/inert": "^5.2.1",
+    "@hapi/joi": "^15.1.0",
+    "@hapi/vision": "^5.5.2",
+    "@sendgrid/mail": "^6.4.0",
+    "abstract-logging": "^1.0.0",
+    "bcrypt": "^3.0.1",
+    "dotenv": "^6.0.0",
+    "ejs": "^2.7.1",
+    "email-templates": "^7.0.5",
+    "glob": "^7.1.6",
+    "hapi-auth-jwt2": "^8.1.0",
+    "hapi-swagger": "^10.0.2",
+    "jsonwebtoken": "^8.3.0",
+    "knex": "^0.20.1",
+    "knex-postgis": "^0.10.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.22.2",
+    "node-cron": "^2.0.3",
+    "nodemailer-mailgun-transport": "^2.0.0",
+    "objection": "^1.6.9",
+    "objection-filter": "hoang3553/objection-filter#4b98a36b05ddb4bbec7a1c71e48c2624cb500d9d",
+    "pg": "^7.4.3",
+    "pino": "^5.12.3",
+    "pino-pretty": "^3.0.0",
+    "request": "^2.88.2",
+    "request-ip": "^2.1.3",
+    "request-promise": "^4.2.4",
+    "request-promise-native": "^1.0.8",
+    "slug": "^0.9.4",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.8.0",
+    "eslint-config-hapi": "^10.1.0",
+    "eslint-plugin-hapi": "^4.0.0",
+    "eslint-plugin-node": "^5.2.0",
+    "jest": "^24.1.0",
+    "jest-junit": "^6.3.0",
+    "jest-nyan-reporter": "^1.0.2",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5",
+    "sinon": "^7.2.4",
+    "sinon-chai": "^3.3.0",
+    "supertest": "^3.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "reporters": [
+      [
+        "jest-nyan-reporter",
+        {
+          "suppressErrorReporter": false
+        }
+      ]
+    ]
+  }
+}
